@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function Kontak() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+    <div className="flex flex-col flex-1 items-center justify-center font-sans">
+      <main className="flex flex-1 w-full max-w-3xl flex-col items-center py-32 px-16 sm:items-start">
         <Image
-          className="dark:overlay h-[100px] w-[100px]"
+          className="dark:overlay h-[100px] w-[100px] hover:rotate-180 transition-transform duration-1000"
           src="/diamond 1.svg"
           alt="Next.js logo"
           width={100}
@@ -17,7 +17,7 @@ export default function Kontak() {
             Find me on:
           </h1>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
+        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row mt-5">
           <a
             className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
             href="https://github.com/yasczzn/"
