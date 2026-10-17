@@ -2,11 +2,11 @@ import Image from "next/image";
 
 export default function Tentang() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+    <div className="flex flex-col flex-1 items-center justify-center font-sans">
+      <main className="flex flex-1 w-full max-w-3xl flex-col items-center py-32 px-16 sm:items-start">
         <p>Hello, my name is</p>
         <Image
-          className="dark:overlay h-[100px] w-[100px]"
+          className="dark:overlay h-[100px] w-[100px] hover:rotate-90 transition-transform duration-500"
           src="/diamond 1.svg"
           alt="Next.js logo"
           width={100}
@@ -18,8 +18,7 @@ export default function Tentang() {
             Putri Yasmina Rahma Zain
           </h1>
           <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            I am a fullstack developer based in Jakarta.
-            I also enjoy creating graphic designs.
+            I am a fullstack developer based in Jakarta. I also enjoy creating graphic designs.
           </p>
         </div>
       </main>

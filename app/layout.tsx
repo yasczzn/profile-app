@@ -20,8 +20,9 @@ export const metadata: Metadata = {
 
 function Nav() {
   return (
-    <nav>
-      <Link href="/">Beranda</Link> | <Link href="/tentang">Tentang</Link> |{" "}
+    <nav className="flex gap-4 border-b p-4">
+      <Link href="/">Beranda</Link>
+      <Link href="/tentang">Tentang</Link>
       <Link href="/kontak">Kontak</Link>
     </nav>
   );
@@ -29,7 +30,7 @@ function Nav() {
 
 function Footer() {
   return (
-    <footer>
+    <footer className="border-t p-4">
       <p>&copy; 2026 yasczzn</p>
     </footer>
   );
@@ -37,13 +38,10 @@ function Footer() {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html
-      lang="id"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
+    <html lang="id" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
         <Nav />
-          {children}
+        {children}
         <Footer />
       </body>
     </html>
